@@ -47,12 +47,9 @@ class SecondViewController: UIViewController {
     // MARK: - Binding
 
     private func setupBind() {
-        self.viewModel.numOfCounts.asEventObserver().receive { count in
-            self.countLabel.text = "\(count)"
-        }
-
-        self.viewModel.canCountDown.asEventObserver().receive { canCountDown in
-            self.countDownButton.isEnabled = canCountDown
+        self.viewModel.model.asEventObserver().receive { model in
+            self.countLabel.text = "\(model.count)"
+            self.countDownButton.isEnabled = model.count > 0
         }
     }
 

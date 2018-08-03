@@ -9,30 +9,18 @@
 class SecondViewModel {
 
     // MARK: - Variables
-    private var model = SecondModel()
 
-    private(set) var numOfCounts = EventVariable<Int>(0)
-    private(set) var canCountDown = EventVariable<Bool>(false)
-
-    // MARK: - Constructor
-
-    init() {
-        self.numOfCounts.asEventObserver().receive { count in
-            self.canCountDown.value = count > 0
-        }
-    }
+    private(set) var model = EventVariable<SecondModel>(SecondModel())
 
     // MARK: - Internal Methods
 
     func countUp(num: Int = 1) {
-        self.model.count += num
-        self.numOfCounts.value = self.model.count
+        self.model.value.count += num
     }
 
     func countDown(num: Int = 1) {
-        if self.canCountDown.value {
-            self.model.count -= num
-            self.numOfCounts.value = self.model.count
+        if self.model.value.count > 0 {
+            self.model.value.count -= num
         }
     }
 
