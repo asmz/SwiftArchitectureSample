@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AyN-eI-vmb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="wWy-Ig-okM">
+            <objects>
+                <viewController id="AyN-eI-vmb" userLabel="First" customClass="FirstViewController" customModule="SwiftArchitectureSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wka-Fk-p6b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSU-mu-KLX">
+                                <rect key="frame" x="180" y="269" width="15" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oAp-ww-qIu">
+                                <rect key="frame" x="87.5" y="308.5" width="200" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NB5-tT-Toa">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                        <state key="normal" title="Down"/>
+                                        <connections>
+                                            <action selector="didTappedCountDownButton" destination="AyN-eI-vmb" eventType="touchUpInside" id="deN-te-HG0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFu-ND-puq">
+                                        <rect key="frame" x="100" y="0.0" width="100" height="50"/>
+                                        <state key="normal" title="Up"/>
+                                        <connections>
+                                            <action selector="didTappedCountUpButton" destination="AyN-eI-vmb" eventType="touchUpInside" id="1EF-Hn-LLO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="MAj-KB-sWx"/>
+                                    <constraint firstAttribute="height" constant="50" id="k6L-QC-P2B"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nSU-mu-KLX" firstAttribute="centerX" secondItem="Wka-Fk-p6b" secondAttribute="centerX" id="LDv-Zj-U4N"/>
+                            <constraint firstItem="oAp-ww-qIu" firstAttribute="centerX" secondItem="Wka-Fk-p6b" secondAttribute="centerX" id="d0W-41-VrU"/>
+                            <constraint firstItem="oAp-ww-qIu" firstAttribute="centerY" secondItem="Wka-Fk-p6b" secondAttribute="centerY" id="isA-Q6-7zr"/>
+                            <constraint firstItem="nSU-mu-KLX" firstAttribute="centerY" secondItem="Wka-Fk-p6b" secondAttribute="centerY" constant="-50" id="qYk-Ge-Yfh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pnj-2N-9if"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MVP" image="first" id="fgV-lE-39k"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="countDownButton" destination="NB5-tT-Toa" id="SdK-oq-Jmf"/>
+                        <outlet property="countLabel" destination="nSU-mu-KLX" id="ncp-tg-2Mr"/>
+                        <outlet property="countUpButton" destination="nFu-ND-puq" id="HDl-gb-yY5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9r-BP-SXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="161"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>
