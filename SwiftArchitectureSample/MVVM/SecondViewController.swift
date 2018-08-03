@@ -11,7 +11,7 @@ import UIKit
 class SecondViewController: UIViewController {
 
     // MARK: - Variables
-
+    private let viewModel = SecondViewModel()
 
     // MARK: - IBOutlets
 
@@ -22,9 +22,11 @@ class SecondViewController: UIViewController {
     // MARK: - IBActions
 
     @IBAction func didTappedCountDownButton() {
+        self.viewModel.countDown()
     }
 
     @IBAction func didTappedCountUpButton() {
+        self.viewModel.countUp()
     }
 
     // MARK: - Lifecycles
@@ -33,11 +35,25 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
+        self.countDownButton.isEnabled = false
+        self.setupBind()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    // MARK: - Binding
+
+    private func setupBind() {
+        self.viewModel.numOfCounts.asEventObserver().receive { count in
+            self.countLabel.text = "\(count)"
+        }
+
+        self.viewModel.canCountDown.asEventObserver().receive { canCountDown in
+            self.countDownButton.isEnabled = canCountDown
+        }
     }
 
 }

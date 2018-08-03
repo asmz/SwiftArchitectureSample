@@ -19,6 +19,8 @@
 		72DFBCCF2114424900E7E2A6 /* FirstPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCCE2114424900E7E2A6 /* FirstPresenter.swift */; };
 		72DFBCD12114425B00E7E2A6 /* FirstModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCD02114425B00E7E2A6 /* FirstModel.swift */; };
 		72DFBCD32114426600E7E2A6 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCD22114426600E7E2A6 /* FirstView.swift */; };
+		FE6AFDC9211488D00048D0A7 /* SecondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AFDC8211488D00048D0A7 /* SecondModel.swift */; };
+		FE6AFDCB211489250048D0A7 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AFDCA211489250048D0A7 /* SecondViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		72DFBCCE2114424900E7E2A6 /* FirstPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPresenter.swift; sourceTree = "<group>"; };
 		72DFBCD02114425B00E7E2A6 /* FirstModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstModel.swift; sourceTree = "<group>"; };
 		72DFBCD22114426600E7E2A6 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		FE6AFDC8211488D00048D0A7 /* SecondModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModel.swift; sourceTree = "<group>"; };
+		FE6AFDCA211489250048D0A7 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				7299356F21145D7700FF648E /* EventVariable.swift */,
 				7299356D21145D7700FF648E /* SecondViewController.swift */,
+				FE6AFDC8211488D00048D0A7 /* SecondModel.swift */,
+				FE6AFDCA211489250048D0A7 /* SecondViewModel.swift */,
 				7299356E21145D7700FF648E /* Second.storyboard */,
 			);
 			path = MVVM;
@@ -183,6 +189,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7299357221145D7700FF648E /* EventVariable.swift in Sources */,
+				FE6AFDCB211489250048D0A7 /* SecondViewModel.swift in Sources */,
+				FE6AFDC9211488D00048D0A7 /* SecondModel.swift in Sources */,
 				7299357021145D7700FF648E /* SecondViewController.swift in Sources */,
 				72DFBCD32114426600E7E2A6 /* FirstView.swift in Sources */,
 				72DFBCD12114425B00E7E2A6 /* FirstModel.swift in Sources */,
