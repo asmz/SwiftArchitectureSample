@@ -8,4 +8,8 @@
 
 struct SecondModel {
     var count = 0
+
+    var canCountDown: Bool {
+        return self.count > 0
+    }
 }

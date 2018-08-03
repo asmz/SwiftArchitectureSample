@@ -19,7 +19,7 @@ class SecondViewModel {
     }
 
     func countDown(num: Int = 1) {
-        if self.model.value.count > 0 {
+        if self.model.value.canCountDown {
             self.model.value.count -= num
         }
     }

@@ -36,7 +36,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        self.refresh()
+        _ = presenter
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,9 +48,12 @@ class FirstViewController: UIViewController {
 
 extension FirstViewController: FirstView {
 
-    func refresh() {
-        self.countLabel.text = "\(self.presenter.numOfCounts)"
-        self.countDownButton.isEnabled = self.presenter.canCountDown
+    func updateLabel(text: String) {
+        self.countLabel.text = text
+    }
+
+    func updateCountDownButtonState(isEnabled: Bool) {
+        self.countDownButton.isEnabled = isEnabled
     }
 
 }

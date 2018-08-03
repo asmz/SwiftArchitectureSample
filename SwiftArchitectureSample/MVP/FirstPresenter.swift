@@ -11,34 +11,34 @@ class FirstPresenter {
     // MARK: - Variables
 
     private weak var view: FirstView?
-    private var model = FirstModel()
-
-    var numOfCounts: Int {
-        return self.model.count
-    }
-
-    var canCountDown: Bool {
-        return self.model.count > 0
+    private var model: FirstModel {
+        didSet {
+            self.refresh()
+        }
     }
 
     // MARK: - Constructor
 
     init(view: FirstView) {
         self.view = view
+        self.model = FirstModel()
+        self.refresh()
     }
 
     // MARK: - Internal Methods
 
     func countUp(num: Int = 1) {
         self.model.count += num
-        self.view?.refresh()
     }
 
     func countDown(num: Int = 1) {
-        if self.canCountDown {
+        if self.model.canCountDown {
             self.model.count -= num
-            self.view?.refresh()
         }
     }
 
+    func refresh() {
+        self.view?.updateLabel(text: "\(self.model.count)")
+        self.view?.updateCountDownButtonState(isEnabled: self.model.canCountDown)
+    }
 }

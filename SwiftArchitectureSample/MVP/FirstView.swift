@@ -7,5 +7,6 @@
 //
 
 protocol FirstView: class {
-    func refresh()
+    func updateLabel(text: String)
+    func updateCountDownButtonState(isEnabled: Bool)
 }
