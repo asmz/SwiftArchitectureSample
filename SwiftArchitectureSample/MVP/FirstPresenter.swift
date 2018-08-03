@@ -13,7 +13,7 @@ class FirstPresenter {
     private weak var view: FirstView?
     private var model: FirstModel {
         didSet {
-            self.refresh()
+            self.refreshViews()
         }
     }
 
@@ -22,7 +22,7 @@ class FirstPresenter {
     init(view: FirstView) {
         self.view = view
         self.model = FirstModel()
-        self.refresh()
+        self.refreshViews()
     }
 
     // MARK: - Internal Methods
@@ -37,7 +37,7 @@ class FirstPresenter {
         }
     }
 
-    func refresh() {
+    func refreshViews() {
         self.view?.updateLabel(text: "\(self.model.count)")
         self.view?.updateCountDownButtonState(isEnabled: self.model.canCountDown)
     }
