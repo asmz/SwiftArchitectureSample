@@ -37,7 +37,9 @@ class FirstPresenter {
         }
     }
 
-    func refreshViews() {
+    // MARK: - Private Methods
+
+    private func refreshViews() {
         self.view?.updateLabel(text: "\(self.model.count)")
         self.view?.updateCountDownButtonState(isEnabled: self.model.canCountDown)
     }
