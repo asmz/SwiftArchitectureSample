@@ -22,6 +22,7 @@
 		FE6AFDC9211488D00048D0A7 /* SecondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AFDC8211488D00048D0A7 /* SecondModel.swift */; };
 		FE6AFDCB211489250048D0A7 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AFDCA211489250048D0A7 /* SecondViewModel.swift */; };
 		FE6AFDDC2115790E0048D0A7 /* FirstPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AFDDB2115790E0048D0A7 /* FirstPresenterTest.swift */; };
+		FECCA3632116E65600D3D410 /* SecondViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCA3622116E65600D3D410 /* SecondViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		FE6AFDD0211578930048D0A7 /* SwiftArchitectureSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftArchitectureSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6AFDD4211578930048D0A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE6AFDDB2115790E0048D0A7 /* FirstPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPresenterTest.swift; sourceTree = "<group>"; };
+		FECCA3622116E65600D3D410 /* SecondViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				FE6AFDDA211578F40048D0A7 /* MVP */,
+				FECCA3612116E63000D3D410 /* MVVM */,
 				FE6AFDD4211578930048D0A7 /* Info.plist */,
 			);
 			path = SwiftArchitectureSampleTests;
@@ -153,6 +156,14 @@
 				FE6AFDDB2115790E0048D0A7 /* FirstPresenterTest.swift */,
 			);
 			path = MVP;
+			sourceTree = "<group>";
+		};
+		FECCA3612116E63000D3D410 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				FECCA3622116E65600D3D410 /* SecondViewModelTest.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECCA3632116E65600D3D410 /* SecondViewModelTest.swift in Sources */,
 				FE6AFDDC2115790E0048D0A7 /* FirstPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

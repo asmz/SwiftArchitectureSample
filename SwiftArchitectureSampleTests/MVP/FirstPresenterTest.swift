@@ -65,7 +65,6 @@ class FirstPresenterTest: XCTestCase {
         self.presenter.countUp(num: 100)
     }
 
-
     func testCountDownFirst() {
         self.view.didCalledUpdateLabel = { text in
             XCTAssertEqual(text, "0")
