@@ -10,15 +10,15 @@ class SecondViewModel {
 
     // MARK: - Variables
 
-    private var model = EventVariable<SecondModel>(SecondModel())
+    private var model = SimpleDataBinder<SecondModel>(SecondModel())
 
-    private(set) var countLabelText = EventVariable<String>("0")
-    private(set) var canCountDown = EventVariable<Bool>(false)
+    private(set) var countLabelText = SimpleDataBinder<String>("0")
+    private(set) var canCountDown = SimpleDataBinder<Bool>(false)
 
     // MARK: - Constructor
 
     init() {
-        self.model.asEventObserver().receive { model in
+        self.model.asBindable().bind { model in
             self.countLabelText.value = "\(self.model.value.count)"
             self.canCountDown.value = self.model.value.canCountDown
         }
