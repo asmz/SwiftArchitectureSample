@@ -47,11 +47,11 @@ class SecondViewController: UIViewController {
     // MARK: - Binding
 
     private func setupBind() {
-        self.viewModel.countLabelText.asBindable().bind { text in
+        self.viewModel.countLabelText.bind { text in
             self.countLabel.text = text
         }
 
-        self.viewModel.canCountDown.asBindable().bind { canCountDown in
+        self.viewModel.canCountDown.bind { canCountDown in
             self.countDownButton.isEnabled = canCountDown
         }
     }

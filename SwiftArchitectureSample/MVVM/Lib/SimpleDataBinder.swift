@@ -10,44 +10,20 @@ import Foundation
 
 final class SimpleDataBinder<Element> {
 
-    private let _bindable: Bindable<Element>
-    private var _value: Element
+    private var callbacks: [((Element) -> Void)] = []
 
     var value: Element {
-        get {
-            return _value
-        }
-        set(newValue) {
-            _value = newValue
-            _bindable.send(value: newValue)
+        didSet {
+            callbacks.forEach { $0(value) }
         }
     }
 
     init(_ value: Element) {
-        _value = value
-        _bindable = Bindable()
+        self.value = value
     }
 
-    func asBindable() -> Bindable<Element> {
-        return _bindable
+    func bind(to callback: @escaping (Element) -> Void) {
+        callbacks.append(callback)
     }
 
-}
-
-class Bindable<Element> {
-    typealias receiveClosure = ((_ value: Element) -> Void)?
-
-    var closureArray = [Bindable.receiveClosure]()
-
-    func bind(to closure: Bindable.receiveClosure) {
-        self.closureArray.append(closure)
-    }
-
-    func send(value: Element) {
-        for closure in closureArray {
-            DispatchQueue.main.async {
-                closure!(value)
-            }
-        }
-    }
 }

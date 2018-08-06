@@ -21,10 +21,10 @@ class SecondViewModelTest: XCTestCase {
     }
 
     func testCountUp() {
-        self.viewModel.countLabelText.asBindable().bind { text in
+        self.viewModel.countLabelText.bind { text in
             XCTAssertEqual(text, "1")
         }
-        self.viewModel.canCountDown.asBindable().bind { canCountDown in
+        self.viewModel.canCountDown.bind { canCountDown in
             XCTAssertTrue(canCountDown)
         }
 
@@ -32,10 +32,10 @@ class SecondViewModelTest: XCTestCase {
     }
 
     func testCountUpMultiple() {
-        self.viewModel.countLabelText.asBindable().bind { text in
+        self.viewModel.countLabelText.bind { text in
             XCTAssertEqual(text, "100")
         }
-        self.viewModel.canCountDown.asBindable().bind { canCountDown in
+        self.viewModel.canCountDown.bind { canCountDown in
             XCTAssertTrue(canCountDown)
         }
 
@@ -43,10 +43,10 @@ class SecondViewModelTest: XCTestCase {
     }
 
     func testCountDownFirst() {
-        self.viewModel.countLabelText.asBindable().bind { text in
+        self.viewModel.countLabelText.bind { text in
             XCTAssertEqual(text, "0")
         }
-        self.viewModel.canCountDown.asBindable().bind { canCountDown in
+        self.viewModel.canCountDown.bind { canCountDown in
             XCTAssertFalse(canCountDown)
         }
 
@@ -57,10 +57,10 @@ class SecondViewModelTest: XCTestCase {
         // count + 1
         self.viewModel.countUp()
 
-        self.viewModel.countLabelText.asBindable().bind { text in
+        self.viewModel.countLabelText.bind { text in
             XCTAssertEqual(text, "0")
         }
-        self.viewModel.canCountDown.asBindable().bind { canCountDown in
+        self.viewModel.canCountDown.bind { canCountDown in
             XCTAssertFalse(canCountDown)
         }
 
@@ -71,10 +71,10 @@ class SecondViewModelTest: XCTestCase {
         // count + 100
         self.viewModel.countUp(num: 100)
 
-        self.viewModel.countLabelText.asBindable().bind { text in
+        self.viewModel.countLabelText.bind { text in
             XCTAssertEqual(text, "50")
         }
-        self.viewModel.canCountDown.asBindable().bind { canCountDown in
+        self.viewModel.canCountDown.bind { canCountDown in
             XCTAssertTrue(canCountDown)
         }
 

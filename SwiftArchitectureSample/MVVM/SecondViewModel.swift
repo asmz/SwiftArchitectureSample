@@ -18,7 +18,7 @@ class SecondViewModel {
     // MARK: - Constructor
 
     init() {
-        self.model.asBindable().bind { model in
+        self.model.bind { model in
             self.countLabelText.value = "\(self.model.value.count)"
             self.canCountDown.value = self.model.value.canCountDown
         }
