@@ -10,6 +10,14 @@
 		7299357021145D7700FF648E /* MVVMSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299356D21145D7700FF648E /* MVVMSampleViewController.swift */; };
 		7299357121145D7700FF648E /* MVVMSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7299356E21145D7700FF648E /* MVVMSample.storyboard */; };
 		7299357221145D7700FF648E /* SimpleDataBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299356F21145D7700FF648E /* SimpleDataBinder.swift */; };
+		72DB80CB211BF25400E17726 /* MVPTableSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80C6211BF25300E17726 /* MVPTableSampleView.swift */; };
+		72DB80CC211BF25400E17726 /* MVPTableSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80C7211BF25300E17726 /* MVPTableSampleViewController.swift */; };
+		72DB80CD211BF25400E17726 /* MVPTableSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DB80C8211BF25400E17726 /* MVPTableSample.storyboard */; };
+		72DB80CE211BF25400E17726 /* MVPTableSampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80C9211BF25400E17726 /* MVPTableSampleModel.swift */; };
+		72DB80CF211BF25400E17726 /* MVPTableSamplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80CA211BF25400E17726 /* MVPTableSamplePresenter.swift */; };
+		72DB80D1211C09F000E17726 /* MVPTableSampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80D0211C09F000E17726 /* MVPTableSampleCell.swift */; };
+		72DB80D3211C0A9D00E17726 /* MVPTableSampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DB80D2211C0A9D00E17726 /* MVPTableSampleCell.xib */; };
+		72DB80D7211C311E00E17726 /* MVPTableSamplePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80D6211C311E00E17726 /* MVPTableSamplePresenterTest.swift */; };
 		72DFBCB6211430E600E7E2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCB5211430E600E7E2A6 /* AppDelegate.swift */; };
 		72DFBCB8211430E600E7E2A6 /* MVPSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCB7211430E600E7E2A6 /* MVPSampleViewController.swift */; };
 		72DFBCBD211430E600E7E2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DFBCBB211430E600E7E2A6 /* Main.storyboard */; };
@@ -39,6 +47,14 @@
 		7299356D21145D7700FF648E /* MVVMSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMSampleViewController.swift; sourceTree = "<group>"; };
 		7299356E21145D7700FF648E /* MVVMSample.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MVVMSample.storyboard; sourceTree = "<group>"; };
 		7299356F21145D7700FF648E /* SimpleDataBinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleDataBinder.swift; sourceTree = "<group>"; };
+		72DB80C6211BF25300E17726 /* MVPTableSampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPTableSampleView.swift; sourceTree = "<group>"; };
+		72DB80C7211BF25300E17726 /* MVPTableSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPTableSampleViewController.swift; sourceTree = "<group>"; };
+		72DB80C8211BF25400E17726 /* MVPTableSample.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MVPTableSample.storyboard; sourceTree = "<group>"; };
+		72DB80C9211BF25400E17726 /* MVPTableSampleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPTableSampleModel.swift; sourceTree = "<group>"; };
+		72DB80CA211BF25400E17726 /* MVPTableSamplePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPTableSamplePresenter.swift; sourceTree = "<group>"; };
+		72DB80D0211C09F000E17726 /* MVPTableSampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPTableSampleCell.swift; sourceTree = "<group>"; };
+		72DB80D2211C0A9D00E17726 /* MVPTableSampleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVPTableSampleCell.xib; sourceTree = "<group>"; };
+		72DB80D6211C311E00E17726 /* MVPTableSamplePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPTableSamplePresenterTest.swift; sourceTree = "<group>"; };
 		72DFBCB2211430E600E7E2A6 /* SwiftArchitectureSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftArchitectureSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72DFBCB5211430E600E7E2A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72DFBCB7211430E600E7E2A6 /* MVPSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSampleViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +112,36 @@
 			path = MVVM;
 			sourceTree = "<group>";
 		};
+		72DB80C5211BF20300E17726 /* MVPTable */ = {
+			isa = PBXGroup;
+			children = (
+				72DB80C7211BF25300E17726 /* MVPTableSampleViewController.swift */,
+				72DB80C9211BF25400E17726 /* MVPTableSampleModel.swift */,
+				72DB80CA211BF25400E17726 /* MVPTableSamplePresenter.swift */,
+				72DB80C6211BF25300E17726 /* MVPTableSampleView.swift */,
+				72DB80C8211BF25400E17726 /* MVPTableSample.storyboard */,
+				72DB80D4211C1BAE00E17726 /* Cells */,
+			);
+			path = MVPTable;
+			sourceTree = "<group>";
+		};
+		72DB80D4211C1BAE00E17726 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				72DB80D0211C09F000E17726 /* MVPTableSampleCell.swift */,
+				72DB80D2211C0A9D00E17726 /* MVPTableSampleCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		72DB80D5211C30FA00E17726 /* MVPTable */ = {
+			isa = PBXGroup;
+			children = (
+				72DB80D6211C311E00E17726 /* MVPTableSamplePresenterTest.swift */,
+			);
+			path = MVPTable;
+			sourceTree = "<group>";
+		};
 		72DFBCA9211430E600E7E2A6 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				72DFBCCA21143FA600E7E2A6 /* MVP */,
+				72DB80C5211BF20300E17726 /* MVPTable */,
 				7299356A21145CDE00FF648E /* MVVM */,
 				72DFBCC921143F8A00E7E2A6 /* Commons */,
 				72DFBCB5211430E600E7E2A6 /* AppDelegate.swift */,
@@ -152,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				FE6AFDDA211578F40048D0A7 /* MVP */,
+				72DB80D5211C30FA00E17726 /* MVPTable */,
 				FECCA3612116E63000D3D410 /* MVVM */,
 				FE6AFDD4211578930048D0A7 /* Info.plist */,
 			);
@@ -258,7 +306,9 @@
 				72DFBCCC21143FCC00E7E2A6 /* MVPSample.storyboard in Resources */,
 				72DFBCC2211430E800E7E2A6 /* LaunchScreen.storyboard in Resources */,
 				72DFBCBF211430E800E7E2A6 /* Assets.xcassets in Resources */,
+				72DB80CD211BF25400E17726 /* MVPTableSample.storyboard in Resources */,
 				7299357121145D7700FF648E /* MVVMSample.storyboard in Resources */,
+				72DB80D3211C0A9D00E17726 /* MVPTableSampleCell.xib in Resources */,
 				72DFBCBD211430E600E7E2A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,13 +328,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				7299357221145D7700FF648E /* SimpleDataBinder.swift in Sources */,
+				72DB80CB211BF25400E17726 /* MVPTableSampleView.swift in Sources */,
 				FE6AFDCB211489250048D0A7 /* MVVMSampleViewModel.swift in Sources */,
 				FE6AFDC9211488D00048D0A7 /* MVVMSampleModel.swift in Sources */,
+				72DB80CC211BF25400E17726 /* MVPTableSampleViewController.swift in Sources */,
 				7299357021145D7700FF648E /* MVVMSampleViewController.swift in Sources */,
+				72DB80D1211C09F000E17726 /* MVPTableSampleCell.swift in Sources */,
+				72DB80CE211BF25400E17726 /* MVPTableSampleModel.swift in Sources */,
 				72DFBCD32114426600E7E2A6 /* MVPSampleView.swift in Sources */,
 				72DFBCD12114425B00E7E2A6 /* MVPSampleModel.swift in Sources */,
 				72DFBCB6211430E600E7E2A6 /* AppDelegate.swift in Sources */,
 				72DFBCB8211430E600E7E2A6 /* MVPSampleViewController.swift in Sources */,
+				72DB80CF211BF25400E17726 /* MVPTableSamplePresenter.swift in Sources */,
 				72DFBCCF2114424900E7E2A6 /* MVPSamplePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECCA3632116E65600D3D410 /* MVVMSampleViewModelTest.swift in Sources */,
+				72DB80D7211C311E00E17726 /* MVPTableSamplePresenterTest.swift in Sources */,
 				FE6AFDDC2115790E0048D0A7 /* MVPSamplePresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
