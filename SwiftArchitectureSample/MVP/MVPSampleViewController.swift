@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  MVPSampleViewController.swift
 //  SwiftArchitectureSample
 //
 //  Created by Shimizu Akira on 2018/08/03.
@@ -8,10 +8,11 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class MVPSampleViewController: UIViewController {
 
     // MARK: - Variables
-    private let viewModel = SecondViewModel()
+
+    private lazy var presenter = MVPSamplePresenter(view: self)
 
     // MARK: - IBOutlets
 
@@ -22,11 +23,11 @@ class SecondViewController: UIViewController {
     // MARK: - IBActions
 
     @IBAction func didTappedCountDownButton() {
-        self.viewModel.countDown()
+        self.presenter.countDown()
     }
 
     @IBAction func didTappedCountUpButton() {
-        self.viewModel.countUp()
+        self.presenter.countUp()
     }
 
     // MARK: - Lifecycles
@@ -35,8 +36,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        self.countDownButton.isEnabled = false
-        self.setupBind()
+        _ = presenter
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,16 +44,16 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Binding
+}
 
-    private func setupBind() {
-        self.viewModel.countLabelText.bind { text in
-            self.countLabel.text = text
-        }
+extension MVPSampleViewController: MVPSampleView {
 
-        self.viewModel.canCountDown.bind { canCountDown in
-            self.countDownButton.isEnabled = canCountDown
-        }
+    func updateLabel(text: String) {
+        self.countLabel.text = text
+    }
+
+    func updateCountDownButtonState(isEnabled: Bool) {
+        self.countDownButton.isEnabled = isEnabled
     }
 
 }

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  MVVMSampleViewController.swift
 //  SwiftArchitectureSample
 //
 //  Created by Shimizu Akira on 2018/08/03.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class MVVMSampleViewController: UIViewController {
 
     // MARK: - Variables
-
-    private lazy var presenter = FirstPresenter(view: self)
+    private let viewModel = MVVMSampleViewModel()
 
     // MARK: - IBOutlets
 
@@ -23,11 +22,11 @@ class FirstViewController: UIViewController {
     // MARK: - IBActions
 
     @IBAction func didTappedCountDownButton() {
-        self.presenter.countDown()
+        self.viewModel.countDown()
     }
 
     @IBAction func didTappedCountUpButton() {
-        self.presenter.countUp()
+        self.viewModel.countUp()
     }
 
     // MARK: - Lifecycles
@@ -36,7 +35,8 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        _ = presenter
+        self.countDownButton.isEnabled = false
+        self.setupBind()
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,16 +44,16 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-}
+    // MARK: - Binding
 
-extension FirstViewController: FirstView {
+    private func setupBind() {
+        self.viewModel.countLabelText.bind { text in
+            self.countLabel.text = text
+        }
 
-    func updateLabel(text: String) {
-        self.countLabel.text = text
-    }
-
-    func updateCountDownButtonState(isEnabled: Bool) {
-        self.countDownButton.isEnabled = isEnabled
+        self.viewModel.canCountDown.bind { canCountDown in
+            self.countDownButton.isEnabled = canCountDown
+        }
     }
 
 }

@@ -1,16 +1,16 @@
 //
-//  SecondViewModel.swift
+//  MVVMSampleViewModel.swift
 //  SwiftArchitectureSample
 //
 //  Created by asmz on 2018/08/03.
 //  Copyright © 2018年 asmz. All rights reserved.
 //
 
-class SecondViewModel {
+class MVVMSampleViewModel {
 
     // MARK: - Variables
 
-    private var model = SimpleDataBinder<SecondModel>(SecondModel())
+    private var model = SimpleDataBinder<MVVMSampleModel>(MVVMSampleModel())
 
     private(set) var countLabelText = SimpleDataBinder<String>("0")
     private(set) var canCountDown = SimpleDataBinder<Bool>(false)

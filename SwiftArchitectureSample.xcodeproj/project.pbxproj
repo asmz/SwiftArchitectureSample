@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7299357021145D7700FF648E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299356D21145D7700FF648E /* SecondViewController.swift */; };
-		7299357121145D7700FF648E /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7299356E21145D7700FF648E /* Second.storyboard */; };
+		7299357021145D7700FF648E /* MVVMSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299356D21145D7700FF648E /* MVVMSampleViewController.swift */; };
+		7299357121145D7700FF648E /* MVVMSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7299356E21145D7700FF648E /* MVVMSample.storyboard */; };
 		7299357221145D7700FF648E /* SimpleDataBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299356F21145D7700FF648E /* SimpleDataBinder.swift */; };
 		72DFBCB6211430E600E7E2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCB5211430E600E7E2A6 /* AppDelegate.swift */; };
-		72DFBCB8211430E600E7E2A6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCB7211430E600E7E2A6 /* FirstViewController.swift */; };
+		72DFBCB8211430E600E7E2A6 /* MVPSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCB7211430E600E7E2A6 /* MVPSampleViewController.swift */; };
 		72DFBCBD211430E600E7E2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DFBCBB211430E600E7E2A6 /* Main.storyboard */; };
 		72DFBCBF211430E800E7E2A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72DFBCBE211430E800E7E2A6 /* Assets.xcassets */; };
 		72DFBCC2211430E800E7E2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DFBCC0211430E800E7E2A6 /* LaunchScreen.storyboard */; };
-		72DFBCCC21143FCC00E7E2A6 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DFBCCB21143FCC00E7E2A6 /* First.storyboard */; };
-		72DFBCCF2114424900E7E2A6 /* FirstPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCCE2114424900E7E2A6 /* FirstPresenter.swift */; };
-		72DFBCD12114425B00E7E2A6 /* FirstModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCD02114425B00E7E2A6 /* FirstModel.swift */; };
-		72DFBCD32114426600E7E2A6 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCD22114426600E7E2A6 /* FirstView.swift */; };
-		FE6AFDC9211488D00048D0A7 /* SecondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AFDC8211488D00048D0A7 /* SecondModel.swift */; };
-		FE6AFDCB211489250048D0A7 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AFDCA211489250048D0A7 /* SecondViewModel.swift */; };
-		FE6AFDDC2115790E0048D0A7 /* FirstPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AFDDB2115790E0048D0A7 /* FirstPresenterTest.swift */; };
-		FECCA3632116E65600D3D410 /* SecondViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCA3622116E65600D3D410 /* SecondViewModelTest.swift */; };
+		72DFBCCC21143FCC00E7E2A6 /* MVPSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DFBCCB21143FCC00E7E2A6 /* MVPSample.storyboard */; };
+		72DFBCCF2114424900E7E2A6 /* MVPSamplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCCE2114424900E7E2A6 /* MVPSamplePresenter.swift */; };
+		72DFBCD12114425B00E7E2A6 /* MVPSampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCD02114425B00E7E2A6 /* MVPSampleModel.swift */; };
+		72DFBCD32114426600E7E2A6 /* MVPSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCD22114426600E7E2A6 /* MVPSampleView.swift */; };
+		FE6AFDC9211488D00048D0A7 /* MVVMSampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AFDC8211488D00048D0A7 /* MVVMSampleModel.swift */; };
+		FE6AFDCB211489250048D0A7 /* MVVMSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AFDCA211489250048D0A7 /* MVVMSampleViewModel.swift */; };
+		FE6AFDDC2115790E0048D0A7 /* MVPSamplePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AFDDB2115790E0048D0A7 /* MVPSamplePresenterTest.swift */; };
+		FECCA3632116E65600D3D410 /* MVVMSampleViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCA3622116E65600D3D410 /* MVVMSampleViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,26 +36,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7299356D21145D7700FF648E /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		7299356E21145D7700FF648E /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		7299356D21145D7700FF648E /* MVVMSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMSampleViewController.swift; sourceTree = "<group>"; };
+		7299356E21145D7700FF648E /* MVVMSample.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MVVMSample.storyboard; sourceTree = "<group>"; };
 		7299356F21145D7700FF648E /* SimpleDataBinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleDataBinder.swift; sourceTree = "<group>"; };
 		72DFBCB2211430E600E7E2A6 /* SwiftArchitectureSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftArchitectureSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72DFBCB5211430E600E7E2A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72DFBCB7211430E600E7E2A6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		72DFBCB7211430E600E7E2A6 /* MVPSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSampleViewController.swift; sourceTree = "<group>"; };
 		72DFBCBC211430E600E7E2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72DFBCBE211430E800E7E2A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72DFBCC1211430E800E7E2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72DFBCC3211430E800E7E2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72DFBCCB21143FCC00E7E2A6 /* First.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
-		72DFBCCE2114424900E7E2A6 /* FirstPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPresenter.swift; sourceTree = "<group>"; };
-		72DFBCD02114425B00E7E2A6 /* FirstModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstModel.swift; sourceTree = "<group>"; };
-		72DFBCD22114426600E7E2A6 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
-		FE6AFDC8211488D00048D0A7 /* SecondModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModel.swift; sourceTree = "<group>"; };
-		FE6AFDCA211489250048D0A7 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
+		72DFBCCB21143FCC00E7E2A6 /* MVPSample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVPSample.storyboard; sourceTree = "<group>"; };
+		72DFBCCE2114424900E7E2A6 /* MVPSamplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSamplePresenter.swift; sourceTree = "<group>"; };
+		72DFBCD02114425B00E7E2A6 /* MVPSampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSampleModel.swift; sourceTree = "<group>"; };
+		72DFBCD22114426600E7E2A6 /* MVPSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSampleView.swift; sourceTree = "<group>"; };
+		FE6AFDC8211488D00048D0A7 /* MVVMSampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSampleModel.swift; sourceTree = "<group>"; };
+		FE6AFDCA211489250048D0A7 /* MVVMSampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSampleViewModel.swift; sourceTree = "<group>"; };
 		FE6AFDD0211578930048D0A7 /* SwiftArchitectureSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftArchitectureSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6AFDD4211578930048D0A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE6AFDDB2115790E0048D0A7 /* FirstPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPresenterTest.swift; sourceTree = "<group>"; };
-		FECCA3622116E65600D3D410 /* SecondViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModelTest.swift; sourceTree = "<group>"; };
+		FE6AFDDB2115790E0048D0A7 /* MVPSamplePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSamplePresenterTest.swift; sourceTree = "<group>"; };
+		FECCA3622116E65600D3D410 /* MVVMSampleViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSampleViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				722E54FB2117FBA700AB59C9 /* Lib */,
-				7299356D21145D7700FF648E /* SecondViewController.swift */,
-				FE6AFDC8211488D00048D0A7 /* SecondModel.swift */,
-				FE6AFDCA211489250048D0A7 /* SecondViewModel.swift */,
-				7299356E21145D7700FF648E /* Second.storyboard */,
+				7299356D21145D7700FF648E /* MVVMSampleViewController.swift */,
+				FE6AFDC8211488D00048D0A7 /* MVVMSampleModel.swift */,
+				FE6AFDCA211489250048D0A7 /* MVVMSampleViewModel.swift */,
+				7299356E21145D7700FF648E /* MVVMSample.storyboard */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -139,11 +139,11 @@
 		72DFBCCA21143FA600E7E2A6 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
-				72DFBCB7211430E600E7E2A6 /* FirstViewController.swift */,
-				72DFBCD02114425B00E7E2A6 /* FirstModel.swift */,
-				72DFBCD22114426600E7E2A6 /* FirstView.swift */,
-				72DFBCCE2114424900E7E2A6 /* FirstPresenter.swift */,
-				72DFBCCB21143FCC00E7E2A6 /* First.storyboard */,
+				72DFBCB7211430E600E7E2A6 /* MVPSampleViewController.swift */,
+				72DFBCD02114425B00E7E2A6 /* MVPSampleModel.swift */,
+				72DFBCD22114426600E7E2A6 /* MVPSampleView.swift */,
+				72DFBCCE2114424900E7E2A6 /* MVPSamplePresenter.swift */,
+				72DFBCCB21143FCC00E7E2A6 /* MVPSample.storyboard */,
 			);
 			path = MVP;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 		FE6AFDDA211578F40048D0A7 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
-				FE6AFDDB2115790E0048D0A7 /* FirstPresenterTest.swift */,
+				FE6AFDDB2115790E0048D0A7 /* MVPSamplePresenterTest.swift */,
 			);
 			path = MVP;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 		FECCA3612116E63000D3D410 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				FECCA3622116E65600D3D410 /* SecondViewModelTest.swift */,
+				FECCA3622116E65600D3D410 /* MVVMSampleViewModelTest.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -255,10 +255,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72DFBCCC21143FCC00E7E2A6 /* First.storyboard in Resources */,
+				72DFBCCC21143FCC00E7E2A6 /* MVPSample.storyboard in Resources */,
 				72DFBCC2211430E800E7E2A6 /* LaunchScreen.storyboard in Resources */,
 				72DFBCBF211430E800E7E2A6 /* Assets.xcassets in Resources */,
-				7299357121145D7700FF648E /* Second.storyboard in Resources */,
+				7299357121145D7700FF648E /* MVVMSample.storyboard in Resources */,
 				72DFBCBD211430E600E7E2A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,14 +278,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7299357221145D7700FF648E /* SimpleDataBinder.swift in Sources */,
-				FE6AFDCB211489250048D0A7 /* SecondViewModel.swift in Sources */,
-				FE6AFDC9211488D00048D0A7 /* SecondModel.swift in Sources */,
-				7299357021145D7700FF648E /* SecondViewController.swift in Sources */,
-				72DFBCD32114426600E7E2A6 /* FirstView.swift in Sources */,
-				72DFBCD12114425B00E7E2A6 /* FirstModel.swift in Sources */,
+				FE6AFDCB211489250048D0A7 /* MVVMSampleViewModel.swift in Sources */,
+				FE6AFDC9211488D00048D0A7 /* MVVMSampleModel.swift in Sources */,
+				7299357021145D7700FF648E /* MVVMSampleViewController.swift in Sources */,
+				72DFBCD32114426600E7E2A6 /* MVPSampleView.swift in Sources */,
+				72DFBCD12114425B00E7E2A6 /* MVPSampleModel.swift in Sources */,
 				72DFBCB6211430E600E7E2A6 /* AppDelegate.swift in Sources */,
-				72DFBCB8211430E600E7E2A6 /* FirstViewController.swift in Sources */,
-				72DFBCCF2114424900E7E2A6 /* FirstPresenter.swift in Sources */,
+				72DFBCB8211430E600E7E2A6 /* MVPSampleViewController.swift in Sources */,
+				72DFBCCF2114424900E7E2A6 /* MVPSamplePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FECCA3632116E65600D3D410 /* SecondViewModelTest.swift in Sources */,
-				FE6AFDDC2115790E0048D0A7 /* FirstPresenterTest.swift in Sources */,
+				FECCA3632116E65600D3D410 /* MVVMSampleViewModelTest.swift in Sources */,
+				FE6AFDDC2115790E0048D0A7 /* MVPSamplePresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

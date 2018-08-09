@@ -1,17 +1,17 @@
 //
-//  FirstPresenter.swift
+//  MVPSamplePresenter.swift
 //  SwiftArchitectureSample
 //
 //  Created by Shimizu Akira on 2018/08/03.
 //  Copyright © 2018年 asmz. All rights reserved.
 //
 
-class FirstPresenter {
+class MVPSamplePresenter {
 
     // MARK: - Variables
 
-    private weak var view: FirstView?
-    private var model: FirstModel {
+    private weak var view: MVPSampleView?
+    private var model: MVPSampleModel {
         didSet {
             self.refreshViews()
         }
@@ -19,9 +19,9 @@ class FirstPresenter {
 
     // MARK: - Constructor
 
-    init(view: FirstView) {
+    init(view: MVPSampleView) {
         self.view = view
-        self.model = FirstModel()
+        self.model = MVPSampleModel()
         self.refreshViews()
     }
 

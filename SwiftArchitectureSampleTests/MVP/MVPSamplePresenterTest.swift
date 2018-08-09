@@ -1,5 +1,5 @@
 //
-//  FirstPresenterTest.swift
+//  MVPSamplePresenterTest.swift
 //  SwiftArchitectureSampleTests
 //
 //  Created by asmz on 2018/08/04.
@@ -10,11 +10,11 @@ import XCTest
 
 @testable import SwiftArchitectureSample
 
-class FirstPresenterTest: XCTestCase {
+class MVPSamplePresenterTest: XCTestCase {
 
     // MARK: - Mock
 
-    private final class MockFirstView: FirstView {
+    private final class MockMVPSampleView: MVPSampleView {
 
         var didCalledUpdateLabel: ((String) -> Void)?
         var didCalledUpdateCountDownButtonState: ((Bool) -> Void)?
@@ -33,14 +33,14 @@ class FirstPresenterTest: XCTestCase {
 
     // MARK: - Tests
 
-    private var view: MockFirstView!
-    private var presenter: FirstPresenter!
+    private var view: MockMVPSampleView!
+    private var presenter: MVPSamplePresenter!
 
     override func setUp() {
         super.setUp()
 
-        self.view = MockFirstView()
-        self.presenter = FirstPresenter(view: self.view)
+        self.view = MockMVPSampleView()
+        self.presenter = MVPSamplePresenter(view: self.view)
     }
 
     func testCountUp() {

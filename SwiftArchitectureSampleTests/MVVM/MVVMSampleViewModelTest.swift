@@ -1,5 +1,5 @@
 //
-//  SecondViewModelTest.swift
+//  MVVMSampleViewModelTest.swift
 //  SwiftArchitectureSampleTests
 //
 //  Created by asmz on 2018/08/05.
@@ -10,14 +10,14 @@ import XCTest
 
 @testable import SwiftArchitectureSample
 
-class SecondViewModelTest: XCTestCase {
+class MVVMSampleViewModelTest: XCTestCase {
 
-    private var viewModel: SecondViewModel!
+    private var viewModel: MVVMSampleViewModel!
 
     override func setUp() {
         super.setUp()
 
-        self.viewModel = SecondViewModel()
+        self.viewModel = MVVMSampleViewModel()
     }
 
     func testCountUp() {
