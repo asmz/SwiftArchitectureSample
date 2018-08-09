@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oLO-U1-6hG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MVP(Table)-->
+        <scene sceneID="mh5-lO-cNJ">
+            <objects>
+                <viewController id="oLO-U1-6hG" customClass="MVPTableSampleViewController" customModule="SwiftArchitectureSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nbq-7S-nV7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="roO-6A-IUD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vL-MO-3tM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="1Yp-CW-dIk">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="egd-hX-kUS">
+                                            <connections>
+                                                <action selector="didTappedAddButton" destination="oLO-U1-6hG" id="hvO-cM-SWp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Delete" id="BKu-6P-XFW">
+                                            <connections>
+                                                <action selector="didTappedDeleteButton" destination="oLO-U1-6hG" id="BHp-AE-dhK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="roO-6A-IUD" firstAttribute="top" secondItem="7vL-MO-3tM" secondAttribute="bottom" id="5kD-um-zva"/>
+                            <constraint firstItem="7vL-MO-3tM" firstAttribute="trailing" secondItem="qfU-4O-leO" secondAttribute="trailing" id="Jai-D3-orY"/>
+                            <constraint firstItem="qfU-4O-leO" firstAttribute="trailing" secondItem="roO-6A-IUD" secondAttribute="trailing" id="M2C-P3-Bzs"/>
+                            <constraint firstItem="qfU-4O-leO" firstAttribute="bottom" secondItem="roO-6A-IUD" secondAttribute="bottom" id="i19-kl-tlf"/>
+                            <constraint firstItem="roO-6A-IUD" firstAttribute="leading" secondItem="qfU-4O-leO" secondAttribute="leading" id="pQ6-mP-RCI"/>
+                            <constraint firstItem="7vL-MO-3tM" firstAttribute="top" secondItem="qfU-4O-leO" secondAttribute="top" id="yAJ-SU-eL1"/>
+                            <constraint firstItem="7vL-MO-3tM" firstAttribute="leading" secondItem="qfU-4O-leO" secondAttribute="leading" id="z1z-A8-l7H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qfU-4O-leO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MVP(Table)" image="first" id="y4x-0u-qC8"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="deleteButtonItem" destination="BKu-6P-XFW" id="2Wo-vD-MsD"/>
+                        <outlet property="tableView" destination="roO-6A-IUD" id="6TT-1Z-VWc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZv-no-21m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.60000000000002" y="277.51124437781112"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>

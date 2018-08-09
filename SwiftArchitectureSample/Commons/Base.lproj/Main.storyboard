@@ -21,6 +21,7 @@
                     <connections>
                         <segue destination="Meu-nG-hw1" kind="relationship" relationship="viewControllers" id="KpD-EP-gCU"/>
                         <segue destination="bHg-Sa-IA2" kind="relationship" relationship="viewControllers" id="WMl-Wn-c2r"/>
+                        <segue destination="tFo-UN-LaJ" kind="relationship" relationship="viewControllers" id="B0s-ED-VTd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -45,7 +46,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nUJ-OD-HMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="778" y="-1"/>
+            <point key="canvasLocation" x="778" y="-44"/>
+        </scene>
+        <!--MVPTableSample-->
+        <scene sceneID="LBW-zY-VVR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MVPTableSample" id="tFo-UN-LaJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="DRt-Pr-U9I"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yU-n9-H3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="141"/>
         </scene>
     </scenes>
 </document>
