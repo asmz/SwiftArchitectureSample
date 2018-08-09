@@ -35,7 +35,7 @@ class MVPTableSamplePresenter {
 
     func add() {
         var model = MVPTableSampleModel()
-        model.title = UUID().uuidString
+        model.title = String(describing: Date())
         self.models.append(model)
     }
 
