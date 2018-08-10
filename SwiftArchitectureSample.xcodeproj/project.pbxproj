@@ -24,6 +24,7 @@
 		72DB80E3211D210200E17726 /* MVVMTableSampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80DD211D210200E17726 /* MVVMTableSampleModel.swift */; };
 		72DB80E4211D210200E17726 /* MVVMTableSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80DE211D210200E17726 /* MVVMTableSampleViewController.swift */; };
 		72DB80E5211D210200E17726 /* MVVMTableSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80DF211D210200E17726 /* MVVMTableSampleViewModel.swift */; };
+		72DB80E8211D424700E17726 /* MVVMTableSampleViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80E7211D424700E17726 /* MVVMTableSampleViewModelTest.swift */; };
 		72DFBCB6211430E600E7E2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCB5211430E600E7E2A6 /* AppDelegate.swift */; };
 		72DFBCB8211430E600E7E2A6 /* MVPSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCB7211430E600E7E2A6 /* MVPSampleViewController.swift */; };
 		72DFBCBD211430E600E7E2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DFBCBB211430E600E7E2A6 /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 		72DB80DD211D210200E17726 /* MVVMTableSampleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMTableSampleModel.swift; sourceTree = "<group>"; };
 		72DB80DE211D210200E17726 /* MVVMTableSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMTableSampleViewController.swift; sourceTree = "<group>"; };
 		72DB80DF211D210200E17726 /* MVVMTableSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMTableSampleViewModel.swift; sourceTree = "<group>"; };
+		72DB80E7211D424700E17726 /* MVVMTableSampleViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTableSampleViewModelTest.swift; sourceTree = "<group>"; };
 		72DFBCB2211430E600E7E2A6 /* SwiftArchitectureSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftArchitectureSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72DFBCB5211430E600E7E2A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72DFBCB7211430E600E7E2A6 /* MVPSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSampleViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		72DB80E6211D422100E17726 /* MVVMTable */ = {
+			isa = PBXGroup;
+			children = (
+				72DB80E7211D424700E17726 /* MVVMTableSampleViewModelTest.swift */,
+			);
+			path = MVVMTable;
+			sourceTree = "<group>";
+		};
 		72DFBCA9211430E600E7E2A6 = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +237,7 @@
 				FE6AFDDA211578F40048D0A7 /* MVP */,
 				72DB80D5211C30FA00E17726 /* MVPTable */,
 				FECCA3612116E63000D3D410 /* MVVM */,
+				72DB80E6211D422100E17726 /* MVVMTable */,
 				FE6AFDD4211578930048D0A7 /* Info.plist */,
 			);
 			path = SwiftArchitectureSampleTests;
@@ -381,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECCA3632116E65600D3D410 /* MVVMSampleViewModelTest.swift in Sources */,
+				72DB80E8211D424700E17726 /* MVVMTableSampleViewModelTest.swift in Sources */,
 				72DB80D7211C311E00E17726 /* MVPTableSamplePresenterTest.swift in Sources */,
 				FE6AFDDC2115790E0048D0A7 /* MVPSamplePresenterTest.swift in Sources */,
 			);
