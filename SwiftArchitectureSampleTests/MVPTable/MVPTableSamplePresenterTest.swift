@@ -83,7 +83,7 @@ class MVPTableSamplePresenterTest: XCTestCase {
         self.presenter.delete()
     }
 
-    func testDeleteMultiple() {
+    func testDeleteAndRemain() {
         self.presenter.add()
         self.presenter.add()
         self.presenter.add()
