@@ -12,17 +12,7 @@ class MVVMTableSampleViewModel {
 
     // MARK: - Variables
 
-    private var models = SimpleDataBinder<[MVVMTableSampleModel]>([])
-
-    private(set) var cellData = SimpleDataBinder<[MVVMTableSampleModel]>([])
-
-    // MARK: - Constructor
-
-    init() {
-        self.models.bind { models in
-            self.cellData.value = models
-        }
-    }
+    private(set) var models = SimpleDataBinder<[MVVMTableSampleModel]>([])
 
     // MARK: - Internal Methods
 

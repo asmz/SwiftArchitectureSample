@@ -13,7 +13,6 @@ class MVVMTableSampleViewController: UIViewController {
     // MARK: - Variables
 
     private let viewModel = MVVMTableSampleViewModel()
-    private var cellData: [MVVMTableSampleModel] = []
 
     // MARK: - IBOutlets
 
@@ -36,6 +35,7 @@ class MVVMTableSampleViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
+        self.deleteButtonItem.isEnabled = false
         self.setupTableView()
         self.setupBind()
     }
@@ -55,8 +55,8 @@ class MVVMTableSampleViewController: UIViewController {
     }
 
     private func setupBind() {
-        self.viewModel.cellData.bind { data in
-            self.cellData = data
+        self.viewModel.models.bind { data in
+            self.deleteButtonItem.isEnabled = !data.isEmpty
             self.tableView.reloadData()
         }
     }
@@ -66,12 +66,12 @@ class MVVMTableSampleViewController: UIViewController {
 extension MVVMTableSampleViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.cellData.count
+        return self.viewModel.models.value.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MVVMTableSampleCell.self), for: indexPath) as! MVVMTableSampleCell
-        cell.setupCell(title: self.cellData[indexPath.row].title)
+        cell.setupCell(title: self.viewModel.models.value[indexPath.row].title)
         return cell
     }
 }
