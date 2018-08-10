@@ -18,6 +18,12 @@
 		72DB80D1211C09F000E17726 /* MVPTableSampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80D0211C09F000E17726 /* MVPTableSampleCell.swift */; };
 		72DB80D3211C0A9D00E17726 /* MVPTableSampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DB80D2211C0A9D00E17726 /* MVPTableSampleCell.xib */; };
 		72DB80D7211C311E00E17726 /* MVPTableSamplePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80D6211C311E00E17726 /* MVPTableSamplePresenterTest.swift */; };
+		72DB80E0211D210200E17726 /* MVVMTableSampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80DA211D210200E17726 /* MVVMTableSampleCell.swift */; };
+		72DB80E1211D210200E17726 /* MVVMTableSampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DB80DB211D210200E17726 /* MVVMTableSampleCell.xib */; };
+		72DB80E2211D210200E17726 /* MVVMTableSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DB80DC211D210200E17726 /* MVVMTableSample.storyboard */; };
+		72DB80E3211D210200E17726 /* MVVMTableSampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80DD211D210200E17726 /* MVVMTableSampleModel.swift */; };
+		72DB80E4211D210200E17726 /* MVVMTableSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80DE211D210200E17726 /* MVVMTableSampleViewController.swift */; };
+		72DB80E5211D210200E17726 /* MVVMTableSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB80DF211D210200E17726 /* MVVMTableSampleViewModel.swift */; };
 		72DFBCB6211430E600E7E2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCB5211430E600E7E2A6 /* AppDelegate.swift */; };
 		72DFBCB8211430E600E7E2A6 /* MVPSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFBCB7211430E600E7E2A6 /* MVPSampleViewController.swift */; };
 		72DFBCBD211430E600E7E2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DFBCBB211430E600E7E2A6 /* Main.storyboard */; };
@@ -55,6 +61,12 @@
 		72DB80D0211C09F000E17726 /* MVPTableSampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPTableSampleCell.swift; sourceTree = "<group>"; };
 		72DB80D2211C0A9D00E17726 /* MVPTableSampleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVPTableSampleCell.xib; sourceTree = "<group>"; };
 		72DB80D6211C311E00E17726 /* MVPTableSamplePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPTableSamplePresenterTest.swift; sourceTree = "<group>"; };
+		72DB80DA211D210200E17726 /* MVVMTableSampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMTableSampleCell.swift; sourceTree = "<group>"; };
+		72DB80DB211D210200E17726 /* MVVMTableSampleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MVVMTableSampleCell.xib; sourceTree = "<group>"; };
+		72DB80DC211D210200E17726 /* MVVMTableSample.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MVVMTableSample.storyboard; sourceTree = "<group>"; };
+		72DB80DD211D210200E17726 /* MVVMTableSampleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMTableSampleModel.swift; sourceTree = "<group>"; };
+		72DB80DE211D210200E17726 /* MVVMTableSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMTableSampleViewController.swift; sourceTree = "<group>"; };
+		72DB80DF211D210200E17726 /* MVVMTableSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMTableSampleViewModel.swift; sourceTree = "<group>"; };
 		72DFBCB2211430E600E7E2A6 /* SwiftArchitectureSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftArchitectureSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72DFBCB5211430E600E7E2A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72DFBCB7211430E600E7E2A6 /* MVPSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSampleViewController.swift; sourceTree = "<group>"; };
@@ -92,18 +104,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		722E54FB2117FBA700AB59C9 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				7299356F21145D7700FF648E /* SimpleDataBinder.swift */,
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
 		7299356A21145CDE00FF648E /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				722E54FB2117FBA700AB59C9 /* Lib */,
 				7299356D21145D7700FF648E /* MVVMSampleViewController.swift */,
 				FE6AFDC8211488D00048D0A7 /* MVVMSampleModel.swift */,
 				FE6AFDCA211489250048D0A7 /* MVVMSampleViewModel.swift */,
@@ -142,6 +145,27 @@
 			path = MVPTable;
 			sourceTree = "<group>";
 		};
+		72DB80D8211D20B000E17726 /* MVVMTable */ = {
+			isa = PBXGroup;
+			children = (
+				72DB80DE211D210200E17726 /* MVVMTableSampleViewController.swift */,
+				72DB80DD211D210200E17726 /* MVVMTableSampleModel.swift */,
+				72DB80DF211D210200E17726 /* MVVMTableSampleViewModel.swift */,
+				72DB80DC211D210200E17726 /* MVVMTableSample.storyboard */,
+				72DB80D9211D210200E17726 /* Cells */,
+			);
+			path = MVVMTable;
+			sourceTree = "<group>";
+		};
+		72DB80D9211D210200E17726 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				72DB80DA211D210200E17726 /* MVVMTableSampleCell.swift */,
+				72DB80DB211D210200E17726 /* MVVMTableSampleCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		72DFBCA9211430E600E7E2A6 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +190,7 @@
 				72DFBCCA21143FA600E7E2A6 /* MVP */,
 				72DB80C5211BF20300E17726 /* MVPTable */,
 				7299356A21145CDE00FF648E /* MVVM */,
+				72DB80D8211D20B000E17726 /* MVVMTable */,
 				72DFBCC921143F8A00E7E2A6 /* Commons */,
 				72DFBCB5211430E600E7E2A6 /* AppDelegate.swift */,
 				72DFBCBE211430E800E7E2A6 /* Assets.xcassets */,
@@ -177,6 +202,7 @@
 		72DFBCC921143F8A00E7E2A6 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				7299356F21145D7700FF648E /* SimpleDataBinder.swift */,
 				72DFBCBB211430E600E7E2A6 /* Main.storyboard */,
 				72DFBCC0211430E800E7E2A6 /* LaunchScreen.storyboard */,
 			);
@@ -303,6 +329,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72DB80E1211D210200E17726 /* MVVMTableSampleCell.xib in Resources */,
+				72DB80E2211D210200E17726 /* MVVMTableSample.storyboard in Resources */,
 				72DFBCCC21143FCC00E7E2A6 /* MVPSample.storyboard in Resources */,
 				72DFBCC2211430E800E7E2A6 /* LaunchScreen.storyboard in Resources */,
 				72DFBCBF211430E800E7E2A6 /* Assets.xcassets in Resources */,
@@ -333,14 +361,18 @@
 				FE6AFDC9211488D00048D0A7 /* MVVMSampleModel.swift in Sources */,
 				72DB80CC211BF25400E17726 /* MVPTableSampleViewController.swift in Sources */,
 				7299357021145D7700FF648E /* MVVMSampleViewController.swift in Sources */,
+				72DB80E3211D210200E17726 /* MVVMTableSampleModel.swift in Sources */,
 				72DB80D1211C09F000E17726 /* MVPTableSampleCell.swift in Sources */,
 				72DB80CE211BF25400E17726 /* MVPTableSampleModel.swift in Sources */,
 				72DFBCD32114426600E7E2A6 /* MVPSampleView.swift in Sources */,
 				72DFBCD12114425B00E7E2A6 /* MVPSampleModel.swift in Sources */,
+				72DB80E4211D210200E17726 /* MVVMTableSampleViewController.swift in Sources */,
 				72DFBCB6211430E600E7E2A6 /* AppDelegate.swift in Sources */,
 				72DFBCB8211430E600E7E2A6 /* MVPSampleViewController.swift in Sources */,
 				72DB80CF211BF25400E17726 /* MVPTableSamplePresenter.swift in Sources */,
 				72DFBCCF2114424900E7E2A6 /* MVPSamplePresenter.swift in Sources */,
+				72DB80E0211D210200E17726 /* MVVMTableSampleCell.swift in Sources */,
+				72DB80E5211D210200E17726 /* MVVMTableSampleViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
