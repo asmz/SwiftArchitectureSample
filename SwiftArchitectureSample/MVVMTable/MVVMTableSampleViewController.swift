@@ -1,5 +1,5 @@
 //
-//  MVPTableSampleViewController.swift
+//  MVVMTableSampleViewController.swift
 //  SwiftArchitectureSample
 //
 //  Created by Shimizu Akira on 2018/08/03.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class MVPTableSampleViewController: UIViewController {
+class MVVMTableSampleViewController: UIViewController {
 
     // MARK: - Variables
 
-    private lazy var presenter = MVPTableSamplePresenter(view: self)
+    private let viewModel = MVVMTableSampleViewModel()
 
     // MARK: - IBOutlets
 
@@ -22,11 +22,11 @@ class MVPTableSampleViewController: UIViewController {
     // MARK: - IBActions
 
     @IBAction func didTappedAddButton() {
-        self.presenter.add()
+        self.viewModel.add()
     }
 
     @IBAction func didTappedDeleteButton() {
-        self.presenter.delete()
+        self.viewModel.delete()
     }
 
     // MARK: - Lifecycles
@@ -35,8 +35,9 @@ class MVPTableSampleViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        _ = presenter
+        self.deleteButtonItem.isEnabled = false
         self.setupTableView()
+        self.setupBind()
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,34 +49,29 @@ class MVPTableSampleViewController: UIViewController {
 
     private func setupTableView() {
         self.tableView.dataSource = self
-        let cellName = String(describing: MVPTableSampleCell.self)
+        let cellName = String(describing: MVVMTableSampleCell.self)
         let nib = UINib(nibName: cellName, bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: cellName)
     }
-}
 
-extension MVPTableSampleViewController: MVPTableSampleView {
-
-    func reloadTableData() {
-        self.tableView.reloadData()
+    private func setupBind() {
+        self.viewModel.models.bind { data in
+            self.deleteButtonItem.isEnabled = !data.isEmpty
+            self.tableView.reloadData()
+        }
     }
 
-    func updateDeleteButtonState(isEnabled: Bool) {
-        self.deleteButtonItem.isEnabled = isEnabled
-    }
 }
 
-extension MVPTableSampleViewController: UITableViewDataSource {
+extension MVVMTableSampleViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.presenter.numberOfCellData
+        return self.viewModel.models.value.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MVPTableSampleCell.self), for: indexPath) as! MVPTableSampleCell
-        if let cellData = self.presenter.cellData(at: indexPath.row) {
-            cell.setupCell(title: cellData.title)
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MVVMTableSampleCell.self), for: indexPath) as! MVVMTableSampleCell
+        cell.setupCell(title: self.viewModel.models.value[indexPath.row].title)
         return cell
     }
 }

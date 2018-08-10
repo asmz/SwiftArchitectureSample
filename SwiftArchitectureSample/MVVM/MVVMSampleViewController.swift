@@ -11,6 +11,7 @@ import UIKit
 class MVVMSampleViewController: UIViewController {
 
     // MARK: - Variables
+
     private let viewModel = MVVMSampleViewModel()
 
     // MARK: - IBOutlets
