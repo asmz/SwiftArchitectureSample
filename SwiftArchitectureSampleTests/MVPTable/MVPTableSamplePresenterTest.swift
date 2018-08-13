@@ -99,4 +99,21 @@ class MVPTableSamplePresenterTest: XCTestCase {
         self.presenter.delete()
     }
 
+    func testCellData() {
+        self.presenter.add()
+        self.presenter.add()
+        self.presenter.add()
+        XCTAssertEqual(self.presenter.numberOfCellData, 3)  // Check model count before test
+
+        XCTAssertNotNil(self.presenter.cellData(at: 0))
+        XCTAssert(type(of: self.presenter.cellData(at: 0)!) == MVPTableSampleModel.self)
+        print(type(of: self.presenter.cellData(at: 0)!))
+        print(MVPTableSampleModel.self)
+    }
+
+    func testCellDataIsNil() {
+        XCTAssertEqual(self.presenter.numberOfCellData, 0)  // Check model count before test
+
+        XCTAssertNil(self.presenter.cellData(at: 0))
+    }
 }
