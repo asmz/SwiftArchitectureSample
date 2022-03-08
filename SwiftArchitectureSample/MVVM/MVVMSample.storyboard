@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AyN-eI-vmb">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AyN-eI-vmb">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,14 +25,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oAp-ww-qIu">
                                 <rect key="frame" x="87.5" y="308.5" width="200" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NB5-tT-Toa">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NB5-tT-Toa">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
                                         <state key="normal" title="Down"/>
                                         <connections>
                                             <action selector="didTappedCountDownButton" destination="AyN-eI-vmb" eventType="touchUpInside" id="deN-te-HG0"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFu-ND-puq">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFu-ND-puq">
                                         <rect key="frame" x="100" y="0.0" width="100" height="50"/>
                                         <state key="normal" title="Up"/>
                                         <connections>
@@ -48,6 +46,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pnj-2N-9if"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nSU-mu-KLX" firstAttribute="centerX" secondItem="Wka-Fk-p6b" secondAttribute="centerX" id="LDv-Zj-U4N"/>
@@ -55,7 +54,6 @@
                             <constraint firstItem="oAp-ww-qIu" firstAttribute="centerY" secondItem="Wka-Fk-p6b" secondAttribute="centerY" id="isA-Q6-7zr"/>
                             <constraint firstItem="nSU-mu-KLX" firstAttribute="centerY" secondItem="Wka-Fk-p6b" secondAttribute="centerY" constant="-50" id="qYk-Ge-Yfh"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Pnj-2N-9if"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="MVVM" image="second" id="fgV-lE-39k"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
